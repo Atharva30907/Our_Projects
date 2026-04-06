@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Projects</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+
+    <a href="/admin">🔐Admin Login</a>
+</div>
+
+<!-- HEADER -->
+<div class="header">
+    <h1>Our Projects</h1>
+    <p>Making a difference together with our initiatives</p>
+</div>
+
+<!-- PROJECT SECTION -->
+<div class="projects">
+    {% for project in projects %}
+    <div class="card">
+        <img src="/static/uploads/{{project.image}}" alt="project">
+        <h3>{{project.title}}</h3>
+        <p>{{project.description[:80]}}...</p>
+        <a href="/project/{{project.id}}">Learn More</a>
+    </div>
+    {% endfor %}
+</div>
+
+<!-- IMPACT SECTION -->
+<div class="impact-container">
+
+    <h3 class="impact-heading">Our Impact</h3>
+    <p class="impact-sub">See how we are making a difference with your support</p>
+
+    <div class="impact">
+        <div class="impact-box">
+            500+<br><span>People Helped</span>
+        </div>
+        <div class="impact-box">
+            300+<br><span>Volunteers Engaged</span>
+        </div>
+        <div class="impact-box">
+            50,000+<br><span>Funds Raised</span>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

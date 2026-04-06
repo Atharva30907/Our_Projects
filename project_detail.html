@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Details</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <h2>Project Details</h2>
+</div>
+
+<!-- MAIN CONTAINER -->
+<div class="detail-container">
+
+    <!-- IMAGE -->
+    <div class="detail-image">
+        <img src="/static/uploads/{{project.image}}">
+    </div>
+
+    <!-- CONTENT -->
+    <div class="detail-content">
+        <h1>{{project.title}}</h1>
+
+        <p class="status">Status: {{project.status}}</p>
+
+        <p class="location">
+            <b>Location:</b> {{project.location}}
+        </p>
+
+        <p class="description">
+            {{project.description}}
+        </p>
+
+        <!-- BACK BUTTON -->
+        <a href="/" class="back-btn">⬅ Back to Home</a>
+    </div>
+
+</div>
+
+</body>
+</html>

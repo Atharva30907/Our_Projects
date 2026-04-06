@@ -1,0 +1,365 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f1f5f9;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 8px 25px;
+    background: #0f766e;
+    color: white;
+}
+
+.navbar h2 {
+    margin: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    background: #134e4a;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+/* ================= HEADER ================= */
+.header {
+    text-align: center;
+    background: #0f766e;
+    color: white;
+    padding: 20px;
+}
+
+.header p {
+    font-size: 14px;
+}
+
+/* ================= PROJECTS ================= */
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+/* CARD */
+.card {
+    width: 250px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+
+    border: 1px solid #cbd5e1;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 13px;
+    color: #555;
+}
+
+.card a {
+    text-decoration: none;
+    color: #0f766e;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* HOVER */
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.15);
+    border-color: #0f766e;
+}
+
+/* ================= IMPACT ================= */
+.impact-container {
+    width: 60%;
+    margin: 30px auto;
+    padding: 25px;
+    background: #dbeef0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.impact-heading {
+    margin-bottom: 5px;
+}
+
+.impact-sub {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.impact {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.impact-box {
+    flex: 1;
+    background: #0f766e;
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.impact-box span {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+/* ================= LOGIN ================= */
+.login-container {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    width: 320px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+
+    border: 1px solid #cbd5e1;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.login-box h2 {
+    margin-bottom: 5px;
+}
+
+.login-sub {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.login-box input:focus {
+    border-color: #0f766e;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+
+    background: #0f766e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-box button:hover {
+    background: #134e4a;
+}
+
+/* ================= PROJECT DETAIL ================= */
+.detail-container {
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+    align-items: center;
+}
+
+.detail-image img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.detail-content {
+    max-width: 500px;
+}
+
+.status {
+    display: inline-block;
+    background: #0f766e;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.description {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #0f766e;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.back-btn:hover {
+    background: #134e4a;
+}
+
+/* ================= DASHBOARD ================= */
+.dashboard {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* FORM BOX */
+.form-box {
+    flex: 1;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+
+    border: 1px solid #cbd5e1;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.form-box h3 {
+    margin-bottom: 5px;
+}
+
+.form-sub {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.form-box label {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.form-box input,
+.form-box textarea,
+.form-box select {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px;
+
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.form-box input:focus,
+.form-box textarea:focus {
+    border-color: #0f766e;
+}
+
+.form-box button {
+    width: 100%;
+    padding: 10px;
+    background: #0f766e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-box button:hover {
+    background: #134e4a;
+}
+
+/* LIST BOX */
+.list-box {
+    flex: 1;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+
+    border: 1px solid #cbd5e1;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* LIST ITEMS */
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+/* PROJECT INFO */
+.project-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* STATUS TAG */
+.status-tag {
+    background: #e0f2f1;
+    color: #0f766e;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+/* ACTIONS */
+.actions a {
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.view-btn {
+    background: #0f766e;
+    color: white;
+}
+
+.delete-btn {
+    background: #dc2626;
+    color: white;
+}
+
+.delete-btn:hover {
+    background: #b91c1c;
+}

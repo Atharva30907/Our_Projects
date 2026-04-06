@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <h2>Admin Panel</h2>
+</div>
+
+<div class="dashboard">
+
+    <!-- FORM SECTION -->
+    <div class="form-box">
+        <h3>Add Project</h3>
+        <p class="form-sub">Fill details to create a new project</p>
+
+        <form method="POST" action="/add" enctype="multipart/form-data">
+
+            <label>Project Title</label>
+            <input type="text" name="title" placeholder="Enter project title" required>
+
+            <label>Description</label>
+            <textarea name="description" placeholder="Enter description" required></textarea>
+
+            <label>Status</label>
+            <select name="status">
+                <option>Ongoing</option>
+                <option>Completed</option>
+                <option>Upcoming</option>
+            </select>
+
+            <label>Location</label>
+            <input type="text" name="location" placeholder="Enter location">
+
+            <label>Upload Image</label>
+            <input type="file" name="image" required>
+
+            <button type="submit">+ Save Project</button>
+        </form>
+    </div>
+
+    <!-- PROJECT LIST -->
+    <div class="list-box">
+        <h3>All Projects</h3>
+        <p class="form-sub">Manage your existing projects</p>
+
+        {% for project in projects %}
+        <div class="list-item">
+            <div class="project-info">
+                <b>{{project.title}}</b>
+                <span class="status-tag">{{project.status}}</span>
+            </div>
+
+            <div class="actions">
+                <a href="/project/{{project.id}}" class="view-btn">View</a>
+                <a href="/delete/{{project.id}}" class="delete-btn">Delete</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
+
+</body>
+</html>
